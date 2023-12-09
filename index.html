@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aquarium Registration</title>
+  <link rel ="stylesheet" href="./styyle.css">
+  
+  <style>
+    /* Basic styling for the form */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Register to Buy an Aquarium</h2>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+    
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone">
+    
+    <label for="aquariumType">Type of Aquarium:</label>
+    <select id="aquariumType" name="aquariumType">
+      <option value="freshwater">Freshwater</option>
+      <option value="saltwater">Saltwater</option>
+      <option value="planted">Planted</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="picture">Upload Aquarium Picture:</label><br>
+    <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+
+    <label for="timer">Set Timer:</label>
+    <input type="datetime-local" id="timer" name="timer" required><br><br>
+
+    <label for="minPrice">Minimum Price:</label>
+    <input type="number" id="minPrice" name="minPrice" min="0" required><br><br>
+
+    <label for="maxPrice">Maximum Price:</label>
+    <input type="number" id="maxPrice" name="maxPrice" min="0" required><br><br>
+
+    
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
+
+
+
